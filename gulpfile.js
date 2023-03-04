@@ -21,10 +21,10 @@ function runTask() {
 
 // Sass Task
 function scssTask() {
-  return src("scss/index.scss", { sourcemaps: true })
+  return src("css/scss/index.scss", { sourcemaps: true })
     .pipe(sass.sync().on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest("assets/css", { sourcemaps: "." }));
+    .pipe(dest("css/", { sourcemaps: "." }));
 }
 
 // Browsersync Tasks
@@ -46,9 +46,9 @@ function browsersyncReload(cb) {
 function watchTask() {
   watch("pages/**/*.html", series(runTask, browsersyncReload));
   watch(
-    ["scss/**/*.scss", "assets/js/*.js"],
+    ["css/scss/**/*.scss", "js/*.js"],
     series(scssTask, browsersyncReload)
   );
 }
 
-exports.default = series(runTask, browsersyncServe, watchTask);
+exports.default = series(runTask, scssTask, browsersyncServe, watchTask);
