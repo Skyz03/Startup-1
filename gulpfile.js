@@ -52,3 +52,4 @@ function watchTask() {
 }
 
 exports.default = series(runTask, scssTask, browsersyncServe, watchTask);
+exports.prod = series(runTask, scssTask);
