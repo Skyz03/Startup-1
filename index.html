@@ -128,28 +128,84 @@
         <!-- ! OffCanvas Start  -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <a href="index.html" class="navbar-brand p-0">
+            <div class="offcanvas-header justify-content-start">
+                <button type="button" class="btn-close text-reset m-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+                <a href="index.html" class="navbar-brand p-0 ms-3">
                     <picture>
                         <source media="(min-width:992px)" srcset="./img/2.png">
                         <img src="./img/2.png" alt="image" style="width:160px;">
                     </picture>
                 </a>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                    <!-- ! Accordion Start  -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- * 1st Item  -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" style="padding: 1rem 0; color:  #06A3DA;">
+                                    Blogs
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" style="padding: 1rem; color: #06A3DA;">Blog 1</li>
+                                    <li class="list-group-item" style="padding: 1rem; color: #06A3DA;">Blog 2</li>
+                                </ul>
+                            </div>
                         </div>
+                        <!-- * 2nd Item  -->
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                    imagine this being
+                                    filled with some actual content.
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- * 3rd Item  -->
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the
+                                    <code>.accordion-flush</code> class. This is the third item's accordion body.
+                                    Nothing more exciting
+                                    happening here in terms of content, but just filling up the space to make it look,
+                                    at least at first
+                                    glance, a bit more representative of how this would look in a real-world
+                                    application.
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
+                    <!-- ! Accordion End  -->
+                    <!-- Next Offcanvas Item  -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
@@ -173,6 +229,35 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div> -->
+
+                <!-- * Whatsapp Number Section Start -->
+                <div style="color: #06A3DA; margin-top: 1rem; ">
+                    <p class="my-1">+977 9861-174-305</p>
+                    <p class="my-1">(12:30 PM - 6 PM | everyday)</p>
+                </div>
+                <!-- * Whatsapp Number Section End -->
+
+                <!-- * Follow Us Start Offcanvas  -->
+                <div style="color: #06A3DA; margin-top: 2rem; text-align: center;">
+                    <p class="my-1">Follow Us</p>
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+              class="fab fa-twitter fw-normal"></i></a> -->
+                        <a class="btn btn-sm btn-primary btn-sm-square rounded-circle me-2"
+                            href="https://m.facebook.com/100063516854997/"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+              class="fab fa-linkedin-in fw-normal"></i></a> -->
+                        <a class="btn btn-sm btn-primary btn-sm-square rounded-circle me-2"
+                            href="https://instagram.com/dristi_the_vision_eye_center?igshid=OTJlNzQ0NWM="><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-primary btn-sm-square rounded-circle"
+                            href="https://wa.me/9779861174305"><i class="fab fa-whatsapp fw-normal"></i></a>
+                        <!-- ! Social Links Ends  -->
+                    </div>
+                </div>
+                <!-- * Follow Us End Offcanvas  -->
+
             </div>
         </div>
         <!-- ! OffCanvas End  -->
